@@ -1,0 +1,23 @@
+package net.l33tsystems.mcmod.info;
+
+import net.minecraftforge.common.config.Configuration;
+
+public class ModConfig {
+
+	private static Configuration config;
+	
+	public static void init(Configuration c) {
+		config = c;
+		config.load();
+		
+		versionConfig();
+		
+		config.save();
+	}
+	
+	private static void versionConfig() {
+		if(config.get(config.CATEGORY_GENERAL, "enableVersion_1.0.0", true).getBoolean()) { Version100.config(config); } 
+		else { Version100.disable(config); }
+	}
+	
+}
