@@ -1,0 +1,5 @@
+package net.l33tsystems.mcmod.versions;
+
+public class Version100 {
+
+}

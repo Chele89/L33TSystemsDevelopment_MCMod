@@ -1,0 +1,8 @@
+Version 1.0.0:
+
+    CheleGohm:
+        Created Mod using Forge 11.14.1.1337.
+         - Working Config file!
+         - Version System that is configurable!
+        Added Read Me & Change log text files.
+        Created To-Do list of things to be added.

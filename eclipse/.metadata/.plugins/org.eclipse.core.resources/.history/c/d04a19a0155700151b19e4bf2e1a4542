@@ -1,0 +1,11 @@
+package net.l33tsystems.mcmod.info;
+
+import net.minecraftforge.common.config.Configuration;
+
+public class ModConfig {
+
+	public static void init(Configuration config) {
+		
+	}
+	
+}

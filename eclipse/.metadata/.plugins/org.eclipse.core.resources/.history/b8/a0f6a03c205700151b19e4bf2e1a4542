@@ -1,0 +1,14 @@
+package net.l33tsystems.mcmod.versions;
+
+import net.minecraftforge.common.config.Configuration;
+
+public class Version100 {
+
+	public static void config(Configuration config) {
+		
+	}
+	
+	public static void disable(Configuration config) {
+		
+	}
+}
