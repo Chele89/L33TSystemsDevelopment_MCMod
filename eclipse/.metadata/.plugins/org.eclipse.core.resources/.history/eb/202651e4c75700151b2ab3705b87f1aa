@@ -1,0 +1,35 @@
+package net.l33tsystems.mcmod.versions;
+
+import java.util.ArrayList;
+
+import net.minecraft.block.Block;
+import net.minecraftforge.common.config.Configuration;
+
+public class Version100 {
+
+	private static boolean isEnabled;
+	private static int maxCompressionTier;
+	private static ArrayList<Block> blocks = new ArrayList<Block>();
+	
+	public static void config(Configuration config) {
+		isEnabled = true;
+		
+		maxCompressionTier = config.getInt("maxCompressionTier", "Version 1.0.0", 4, 1, 8, 
+				"Number of tiers of compression available.  Default = 4.  Minimum = 0.  Maximum = 8.");
+		if (maxCompressionTier < 1) { maxCompressionTier = 1; };
+		
+		preInit();
+	}
+	
+	public static void disable(Configuration config) {
+		isEnabled = false;
+		
+		maxCompressionTier = config.getInt("maxCompressionTier", "Version 1.0.0", 4, 1, 8, 
+				"Number of tiers of compression available.  Default = 4.  Minimum = 0.  Maximum = 8.");
+	}
+	
+	public static void preInit() {
+		// Create & Register Blocks & Items
+		System.out.println(Block.getBlockFromName("minecraft:sand").getUnlocalizedName());
+	}
+}

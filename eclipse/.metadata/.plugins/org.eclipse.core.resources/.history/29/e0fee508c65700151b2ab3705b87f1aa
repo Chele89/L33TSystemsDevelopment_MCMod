@@ -1,0 +1,46 @@
+package net.l33tsystems.mcmod.versions;
+
+import net.minecraftforge.common.config.Configuration;
+
+public class Version100 {
+
+	private static boolean isEnabled;
+	private static int maxCompressionTier;
+	private static boolean isSandCompressed;
+	private static boolean isDirtCompressed;
+	private static boolean isCobblestoneCompressed;
+	private static boolean isStoneCompressed;
+	private static boolean isSandStoneCompressed;
+	
+	public static void config(Configuration config) {
+		isEnabled = true;
+		
+		maxCompressionTier = config.getInt("maxCompressionTier", "Version 1.0.0", 4, 1, 8, 
+				"Number of tiers of compression available.  Default = 4.  Minimum = 0.  Maximum = 8.");
+		if (maxCompressionTier < 1) { maxCompressionTier = 1; };
+		isSandCompressed = config.get(config.CATEGORY_GENERAL, "isSandCompressable", true).getBoolean();
+		isDirtCompressed = config.get(config.CATEGORY_GENERAL, "isDirtCompressable", true).getBoolean();
+		isCobblestoneCompressed = config.get(config.CATEGORY_GENERAL, "isCobblestoneCompressable", true).getBoolean();
+		isStoneCompressed = config.get(config.CATEGORY_GENERAL, "isStoneCompressable", true).getBoolean();
+		isSandStoneCompressed = config.get(config.CATEGORY_GENERAL, "isSandStoneCompressable", true).getBoolean();
+		
+		preInit();
+	}
+	
+	public static void disable(Configuration config) {
+		isEnabled = false;
+		
+		maxCompressionTier = config.getInt("maxCompressionTier", "Version 1.0.0", 4, 1, 8, 
+				"Number of tiers of compression available.  Default = 4.  Minimum = 0.  Maximum = 8.");
+		isSandCompressed = false; config.get(config.CATEGORY_GENERAL, "isSandCompressable", false).getBoolean();
+		isDirtCompressed = false; config.get(config.CATEGORY_GENERAL, "isDirtCompressable", false).getBoolean();
+		isCobblestoneCompressed = false; config.get(config.CATEGORY_GENERAL, "isCobblestoneCompressable", false).getBoolean();
+		isStoneCompressed = false; config.get(config.CATEGORY_GENERAL, "isStoneCompressable", false).getBoolean();
+		isSandStoneCompressed = false; config.get(config.CATEGORY_GENERAL, "isSandStoneCompressable", false).getBoolean();
+	}
+	
+	public static void preInit() {
+		// Create & Register Blocks & Items
+		
+	}
+}

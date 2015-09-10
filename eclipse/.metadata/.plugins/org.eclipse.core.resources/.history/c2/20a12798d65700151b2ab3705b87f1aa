@@ -1,0 +1,52 @@
+package net.l33tsystems.mcmod.versions;
+
+import java.util.ArrayList;
+
+import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
+import net.minecraftforge.common.config.Configuration;
+
+public class Version100 {
+
+	private static boolean isEnabled;
+	private static int maxCompressionTier;
+	private static ArrayList<Block> blocks = new ArrayList<Block>();
+	
+	public static void config(Configuration config) {
+		isEnabled = true;
+		
+		setMaxCompressionTier(config);
+		if (maxCompressionTier < 1) { maxCompressionTier = 1; }
+		String blockNames = getBlockNames(config);
+		if (blockNames.length() < 10) { blockNames = "minecraft:sand, minecraft:dirt, minecraft:cobblestone, minecraft:stone"; }
+		String[] blockNameList = blockNames.split(", ");
+		for(int i = 0; i < blockNameList.length; i++) {
+			blocks.add(Block.getBlockFromName(blockNameList[i]));
+		}
+	}
+	
+	public static void disable(Configuration config) {
+		isEnabled = false;
+		
+		setMaxCompressionTier(config);
+		if (maxCompressionTier > 0) { maxCompressionTier = 0; }
+		getBlockNames(config);
+		
+	}
+	
+	private static void setMaxCompressionTier(Configuration config) {
+		maxCompressionTier = config.getInt("maxCompressionTier", "Version 1.0.0", 4, 1, 8, "Number of tiers of compression available.");
+	}
+	
+	private static String getBlockNames(Configuration config) {
+		return config.getString("baseBlockList", "Version 1.0.0", "minecraft:sand, minecraft:dirt, minecraft:cobblestone, minecraft:stone", 
+			"This should be a list of names of blocks in the VANILLA minecraft game seperated by commas.  I will add functionality later for adding other mod's blocks.");
+	}
+	
+	public static void init() {
+		// Create & Register Blocks & Items
+		System.out.println(blocks);
+	}
+	
+	public static boolean isEnabled() { return isEnabled; }
+}

@@ -18,8 +18,7 @@ public class ModConfig {
 	}
 	
 	private static void versionConfig() {
-		config.addCustomCategoryComment("Version 1.0.0", "All items in this section pretain to only to items added to the mod during Version 1.0.0");
-		if(config.get("Version 1.0.0", "enableVersion_1.0.0", true).getBoolean()) { Version100.config(config); } 
+		if(config.getBoolean("Version 1.0.0", "enableVersion_1.0.0", true, "If this is disabled, no components for the Version 1.0.0 release will be included in the game.  Default:  true")) { Version100.config(config); } 
 		else { Version100.disable(config); }
 	}
 	

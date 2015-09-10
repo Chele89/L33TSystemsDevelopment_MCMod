@@ -1,0 +1,87 @@
+[12:51:07] [main/INFO]: Extra: []
+[12:51:08] [main/INFO]: Running with arguments: [--userProperties, {}, --assetsDir, /Users/michelenicholas/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.8, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[12:51:08] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[12:51:08] [main/INFO]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[12:51:08] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[12:51:08] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[12:51:08] [main/INFO]: Forge Mod Loader version 8.0.42.1337 for Minecraft 1.8 loading
+[12:51:08] [main/INFO]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_51, running on Mac OS X:x86_64:10.10.3, installed at /Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre
+[12:51:08] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[12:51:08] [main/INFO]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[12:51:08] [main/INFO]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[12:51:08] [main/INFO]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[12:51:08] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[12:51:08] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[12:51:08] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[12:51:08] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[12:51:08] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[12:51:08] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[12:51:08] [main/ERROR]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
+[12:51:09] [main/ERROR]: FML appears to be missing any signature data. This is not a good thing
+[12:51:09] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[12:51:09] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[12:51:09] [main/INFO]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[12:51:09] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[12:51:09] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[12:51:09] [main/INFO]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[12:51:09] [Client thread/INFO]: Setting user: Player838
+[12:51:11] [Client thread/INFO]: LWJGL Version: 2.9.2
+[12:51:12] [Client thread/INFO]: Attempting early MinecraftForge initialization
+[12:51:12] [Client thread/INFO]: MinecraftForge v11.14.1.1337 Initialized
+[12:51:12] [Client thread/INFO]: Replaced 204 ore recipies
+[12:51:12] [Client thread/INFO]: Completed early MinecraftForge initialization
+[12:51:12] [Client thread/INFO]: Searching /Users/michelenicholas/Documents/Personal/Forge/11.14.1.1337/L33TSystemsDevelopment_MCMod/eclipse/mods for mods
+[12:51:13] [Client thread/INFO]: Forge Mod Loader has identified 4 mods to load
+[12:51:13] [Client thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge, l33tMod] at CLIENT
+[12:51:13] [Client thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge, l33tMod] at SERVER
+[12:51:13] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:L33T Mod
+[12:51:13] [Client thread/INFO]: Processing ObjectHolder annotations
+[12:51:13] [Client thread/INFO]: Found 384 ObjectHolder annotations
+[12:51:13] [Client thread/INFO]: Configured a dormant chunk cache size of 0
+[12:51:13] [Client thread/INFO]: [net.l33tsystems.mcmod.versions.Version100:config:27]: tile.stone.name
+[12:51:13] [Client thread/INFO]: [net.l33tsystems.mcmod.versions.Version100:config:28]: Sandstone
+[12:51:13] [Client thread/INFO]: Applying holder lookups
+[12:51:13] [Client thread/INFO]: Holder lookups applied
+[12:51:13] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[12:51:14] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[12:51:14] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[12:51:14] [Thread-7/INFO]: OpenAL initialized.
+[12:51:14] [Sound Library Loader/INFO]: Sound engine started
+[12:51:15] [Client thread/INFO]: Created: 512x512 textures-atlas
+[12:51:15] [Client thread/INFO]: Forge Mod Loader has successfully loaded 4 mods
+[12:51:15] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:L33T Mod
+[12:51:15] [Client thread/INFO]: SoundSystem shutting down...
+[12:51:15] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[12:51:15] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[12:51:16] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[12:51:16] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[12:51:16] [Thread-9/INFO]: OpenAL initialized.
+[12:51:16] [Sound Library Loader/INFO]: Sound engine started
+[12:51:16] [Client thread/INFO]: Created: 512x512 textures-atlas
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:1x Compressed Dirt#normal not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:2x Compressed tile.stone.name#inventory not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:3x Compressed Sand#normal not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:1x Compressed Sand#inventory not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:1x Compressed tile.stone.name#normal not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:3x Compressed Cobblestone#normal not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:1x Compressed Cobblestone#inventory not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:2x Compressed Cobblestone#inventory not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:2x Compressed Dirt#normal not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:2x Compressed Cobblestone#normal not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:2x Compressed tile.stone.name#normal not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:2x Compressed Dirt#inventory not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:3x Compressed Sand#inventory not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:3x Compressed tile.stone.name#inventory not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:1x Compressed tile.stone.name#inventory not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:1x Compressed Sand#normal not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:1x Compressed Dirt#inventory not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:2x Compressed Sand#normal not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:1x Compressed Cobblestone#normal not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:3x Compressed Cobblestone#inventory not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:3x Compressed Dirt#inventory not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:3x Compressed tile.stone.name#normal not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:2x Compressed Sand#inventory not found
+[12:51:16] [Client thread/ERROR]: Model definition for location l33tmod:3x Compressed Dirt#normal not found
+[12:51:21] [Client thread/INFO]: Stopping!
+[12:51:21] [Client thread/INFO]: SoundSystem shutting down...
+[12:51:21] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

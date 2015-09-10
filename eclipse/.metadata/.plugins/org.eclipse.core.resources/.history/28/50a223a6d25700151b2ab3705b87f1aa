@@ -1,0 +1,16 @@
+package net.l33tsystems.mcmod.blocks;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class CompressedBlock extends Block {
+
+	private Block baseBlock;
+	
+	public CompressedBlock(Block block) {
+		super(block.getMaterial());
+	}
+	
+	
+
+}
